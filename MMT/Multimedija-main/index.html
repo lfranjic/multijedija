@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>The Beautiful Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <h1>The Beautiful Game</h1>
+    </header>
+    <main>
+        <h3>Pravila igre:</h3>
+        <p>
+            Nogometne utakmice se igraju između dva tima i tipično traju 90 minuta,
+            utakmica je podijeljena u dva poluvremena koja traju po 45 minuta.
+            Na poluvremenu (nakon što je prošlo 45 minuta) je stanka od 15 minuta. Ovo dijeli poluvremena.
+            Utakmica se započinje iz središnjeg kruga, tim koji započinje se bira bacanjem novčića.
+            Početkom drugog poluvremena, ekipe mijenjaju strane te početkom drugog poluvremena se također mijenja u posjed prve lopte.
+            Cilj igre je postignuti zgoditak (nogom ili glavom) u suparnički gol.
+            Cijela lopta mora priječi gol liniju kako bi zgoditak važio.
+            Tim koji postigne više zgoditaka u suparničkom golu u tih 90 minuta je pobjednik.
+            Glavni sudac može dodati izgubljeno vrijeme pred kraj oba poluvremena koje se zove "nadoknađeno vrijeme". To je vrijeme koje je bilo izgubljeno na izmjene igrača, vrijeme u kojem lopta nije bila u igri i sl.
+            <br>
+            <br>
+            <a class="rules" target="_blank" href="https://olympics.com/en/news/how-to-play-football-rules-field-pitch-free-kick-penalty">Sva pravila</a>
+            <br>
+            <center>
+            <audio controls autoplay>
+                <source src="navijanje.mp4" type="audio/mpeg">
+            </audio>
+            </center>
+        </p>
+        <p class="secondaryPick">
+        Mariov drugi izbor: <a href="./rukomet.html">Rukomet</a>
+        <br>
+        Leov drugi izbor: <a href="./vaterpolo.html">Vaterpolo</a>
+        </p>
+        <center><button onclick="resetSize()">Reset image size</button></center>
+        <div class="grid-container">
+            <div class="grid-item"><img src="pitch.png" width="300px" height="240px" id="pitch" onclick="zoomPitch()"></div>
+            <div class="grid-item"><img src="positions.gif" width="300px" height="240px" id="positions" onclick="zoomPositions()"></div>
+            <div class="grid-item"><img src="the_game.jpg" width="300px" height="240px" id="game" onclick="zoomGame()"></div>
+            <div class="grid-item"><img src="the_team.jpg" width="300px" height="240px" id="team" onclick="zoomTeam()"></div>
+            <div class="grid-item"><img src="stadium.bmp" width="300px" height="240px" id="stadium" onclick="zoomStadium()"></div>
+            <div class="grid-item"><img src="goal.jpg" width="300px" height="240px" id="goal" onclick="zoomGoal()"></div>
+        </div>
+        <center><iframe width="640" height="300" src="https://www.youtube.com/embed/A-r9sj7zHJ4" title="The Beauty of Football - Greatest Moments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+     
+        <div class="row">
+            <div class="column">
+                <center><img src="mario.jpg" width="200px" id="mario" onclick="zoomMario()"></center>
+                <p onclick="showMario()">Mario Golemović</p>
+                <div class="dropdown-content" id="mariodropdown" style="display: none;">
+                    <a href="http://os-vklaic-garcin.skole.hr/">OŠ Vjekoslav Klaić</a>
+                    <br>
+                    <a href="https://www.slavonski-brod.hr/">Slavonski Brod</a>
+                    <br>
+                    <a href="https://tssb.hr/">Tehnička škola Slavonski Brod</a>
+                    <br>
+                    <a href="https://www.ferit.unios.hr/">FERIT</a>
+                    <br>
+                    <a href="./galerijaMario.html">Bavim li se ja ovim sportom ili ga samo volim?</a>
+                </div>
+            </div>
+            <div class="column">
+                <center><img src="leo.jpg" width="200px" id="leo" onclick="zoomLeo()"></center>
+                <p onclick="showLeo()">Leo Franjić</p>
+                <div class="dropdown-content" id="leodropdown" style="display: none;">
+                    <a href="http://os-bklaica-bizovac.skole.hr/">OŠ Bratoljuba Klaića</a>
+                    <br>
+                    <a href="https://www.opcina-bizovac.hr/">Bizovac</a>
+                    <br>
+                    <a href="http://elpros.net/">Elektrotehnička i prometna škola Osijek</a>
+                    <br>
+                    <a href="https://www.ferit.unios.hr/">FERIT</a>
+                    <br>
+                    <a href="./galerijaLeo.html">Bavim li se ja ovim sportom ili ga samo volim?</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="font-style: italic; text-align: center;">Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://moodle.srce.hr/2022-2023/course/view.php?id=128846" target="_blank">Multimedijska tehnika</a></p>
+    </footer>
+</body>
+</html>
